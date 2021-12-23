@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Fraunces:wght@700;900&family=Pushster&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Barlow Condensed', sans-serif;
+    background:#004730;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    font-size: x-large;
+    font-weight: 600;
+    margin: 0 50px;
+    background: rgba(255, 0, 0, 0.644);
+    border-radius: 30px;
+    border:1px solid rgba(255, 0, 0, 0.644);
+    padding: 10px 30px;
+    overflow: hidden;
+}
+a:nth-child(2){
+    background:blue ;
+    border:1px solid blue;
+}
+span{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: animate 1s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        width: 0;
+        height: 0;
+        opacity: .5;
+    }
+    100%{
+        width: 500px;
+        height: 500px;
+        opacity: .0;
+    }
+}
